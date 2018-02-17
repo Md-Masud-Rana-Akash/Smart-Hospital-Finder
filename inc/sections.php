@@ -1,10 +1,108 @@
 <div style="background-color: #F4E8FF">
-  <div style="background-color: #F4E8FF">
+  <div style="background-color: black">
     <center>
-      <h2>WELCOME TO HOSPITAL MANAGMENT SYSTEM</h2>
-      <p class="lead">We are dedicated to our users and try to provide best service.</p>
+      <br>
+      <br>
+     <!--  <h2 style="color: white">WELCOME TO HOSPITAL MANAGMENT SYSTEM</h2><br> -->
+     <!--  <p class="lead">We are dedicated to our users and try to provide best service.</p> -->
+      <center>
+        <div class="container" style="width:900px ">
+        
+        <form class="form-inline" style="margin-left:55px" action="/action_page.php">
+
+          <div class="form-group">
+            
+             <label class="sr-only"></label>
+             <input style="width:200px;height:50px" type="text" name="cities" id="cities" class="form-control input-lg" autocomplete="off" placeholder="Search Cites" />
+             <i class="glyphicon glyphicon-user form-control-feedback"></i>
+            </div>
+
+          <div class="form-group">
+                
+           <label class="sr-only"></label>
+           <input style="width:200px;height:50px" type="text" name="looking" id="looking" class="form-control input-lg" autocomplete="off" placeholder="Looking for" />
+          </div>
+
+          <div class="form-group">
+          
+           <label class="sr-only"></label>
+           <input style="width:300px;height:50px" type="text" name="name" id="name" class="form-control input-lg" autocomplete="off" placeholder="Search by Doctor name, Hospital" />
+          </div>
+
+       <button class="btn btn-outline-success my-2 my-sm-0 " style="margin-left:10px;width:79px;height:50px" type="submit">Search</button>
+ 
+        </form>
+      </div>
+    </center>
+
+
+<script>
+$(document).ready(function(){
+ 
+ $('#country').typeahead({
+  source: function(query, result){
+   $.ajax({
+    url:"fetch.php",
+    method:"POST",
+    data:{query:query},
+    dataType:"json",
+    success:function(data)
+    {
+     result($.map(data, function(item){
+      return item;
+     }));
+    }
+   })
+  }
+ });
+
+
+ $('#cities').typeahead({
+  source: function(query, result){
+   $.ajax({
+    url:"fetch3.php",
+    method:"POST",
+    data:{query:query},
+    dataType:"json",
+    success:function(data)
+    {
+     result($.map(data, function(item){
+      return item;
+     }));
+    }
+   })
+  }
+ });
+  
+  var cn = $('#country').val();
+  //prompt(cn);
+
+  $('#states').typeahead({
+  source: function(query, result){
+   $.ajax({
+    url:"fetch2.php",
+    method:"POST",
+    data:{query:query , cn:cn},
+    dataType:"json",
+    success:function(data)
+    {
+     result($.map(data, function(item){
+      return item;
+     }));
+    }
+   })
+  }
+ });
+
+
+ 
+});
+</script>
+
+   <br>
+   <br>
       <hr class="m-y-md">
-      <p></p>
+      
       <!-- <p class="lead">
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </p> -->

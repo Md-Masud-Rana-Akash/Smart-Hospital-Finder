@@ -24,12 +24,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <style>
+  
+  body{
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
   /* Make the image fully responsive */
   .carousel-inner img {
       width: 80%;
       height: 60%;
 	  padding-top: 80px;
   }
+
   </style>
 
  </head>

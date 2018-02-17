@@ -14,7 +14,7 @@
               <a class="nav-link js-scroll-trigger" href="register.php">Register</a>
             </li>
 
-            <li class="nav-item dropdown">
+          <!--   <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Select Area
                 </a>
@@ -30,7 +30,7 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Other</a>
                 </div>
-              </li>
+              </li> -->
 
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -42,10 +42,10 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
 
-                <form class="form-inline" style=" margin-left:30px; margin-right:30px;">
+                <!-- <form class="form-inline" style=" margin-left:30px; margin-right:30px;">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                  </form> -->
 
           </ul>
         </div>
