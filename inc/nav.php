@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">HMS</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">SHF</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -10,27 +10,9 @@
               <a class="nav-link js-scroll-trigger" href="login.php">Login</a>
             </li>
 
-            <li class="nav-item">
+         <!--    <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="register.php">Register</a>
-            </li>
-
-          <!--   <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Select Area
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Barisal Division</a>
-                  <a class="dropdown-item" href="#">Chittagong Division</a>
-                  <a class="dropdown-item" href="#">Dhaka Division</a>
-                  <a class="dropdown-item" href="#">Khulna Division</a>
-                  <a class="dropdown-item" href="#">Mymensingh Division</a>
-                  <a class="dropdown-item" href="#">Rajshahi Division</a>
-                  <a class="dropdown-item" href="#">Rangpur Division</a>
-                  <a class="dropdown-item" href="#">Sylhet Division</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Other</a>
-                </div>
-              </li> -->
+            </li> -->
 
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
