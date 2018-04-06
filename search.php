@@ -10,6 +10,8 @@
     }
 
     mysqli_close($DBcon);
+   
+    
 ?>
 
 
@@ -21,7 +23,7 @@
          <div class="form-group">
                      <label for="divison" class="label label-info" ></label>
                      <select style="width:170px;height:50px" class="form-control" id="divison" name="divison" data-show-icon="true">
-                      <option selected disabled hidden>Select Area</option>
+                      <option selected disabled hidden>Select Division</option>
                         <option>Barisal Division</option>
                         <option>Chittagong Division</option>
                         <option>Dhaka Division</option>
@@ -49,7 +51,7 @@
         </select>
   </div>
    
-  <button class="btn btn-outline-success my-2 my-sm-0 " style="margin-left:10px;width:79px;height:50px" name="submit" type="submit">Search</button>
+  <button class="btn btn-outline-success my-2 my-sm-0 " style="margin-left:10px;width:79px;height:50px" name="submit" type="submit" id="submitButton">Search</button>
 
  
 
@@ -63,6 +65,7 @@
 
         <script>
             $(document).ready(function(){
+
             $('.action').change(function(){
             if($(this).val() != ''){
             var action = $(this).attr("id");

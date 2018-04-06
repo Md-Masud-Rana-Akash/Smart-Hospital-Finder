@@ -61,7 +61,8 @@ if (isset($_POST['submit'])){
 	<link rel="stylesheet" href="css/bootstrap-lumen.css">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> 
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
 
 	<style type="text/css">
 
@@ -104,7 +105,7 @@ if (isset($_POST['submit'])){
 		?>
 			<div class="form-group ">
 
-				<label for="email" class="label label-info">email</label>
+				<label for="Email" class="label label-info fa fa-user input-icon">email</label>
 				<input type="text" required="" name="email" class="form-control" msg="please enter your email" id="username">
 				<!-- <label for="username" id="usernameError" class="label label-warning"></label> -->
 			</div>

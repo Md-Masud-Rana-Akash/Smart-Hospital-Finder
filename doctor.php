@@ -74,7 +74,7 @@
 
 ?>
 
-                <form action="" method="post">
+                <form action="doctor.php" method="post">
                     <?php if(isset($msg)) {
                      echo $msg;
                     }
@@ -156,14 +156,62 @@
                     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
+            
+
+
+<?php include('dbconnect.php');
+
+        if (isset($_POST['remove'])) {
+        $email=strip_tags($_POST['email']);
+        $email=$DBcon->real_escape_string($email);
+
+        $check_email=$DBcon->query("SELECT Email FROM doctor WHERE Email='$email'");
+            $count=$check_email->num_rows;
+            
+                if ($count==1) {
+                  $query = "DELETE FROM doctor WHERE Email='$email'";
+                    
+                    if ($DBcon->query($query)) {
+                        $msg="<div class='alert alert-success'>
+        <span class='glyphicon glyphicon-info-sign'></span>&nbsp;
+                        successfully removed ! </div>";
+
+                    }
+                    else {
+                        $msg="<div class='alert alert-danger'>
+        <span class='glyphicon glyphicon-info-sign'></span>&nbsp;
+                        error while removing ! </div>";
+
+                    }
+
+
+                 } 
+
+            else {
+                        $msg="<div class='alert alert-danger'>
+        <span class='glyphicon glyphicon-info-sign'></span>&nbsp;
+                        error while removing ! </div>";
+                    }
+
+          $DBcon->close();
+          
+          }              
+  ?>
+
+
+
+
             <div class="tab-pane" id="removeDoc" role="tabpanel">
-                <form>
+                <form action="" method="post">
+                    <?php if(isset($msg)) {
+                     echo $msg;
+                    } ?>
                     <div class="form-group">
                         <label for="docid">Email:</label>
-                        <input type="text" class="form-control" name="patientid" placeholder="Patient Id">
+                        <input type="text" class="form-control" name="email" placeholder="email">
                     </div>
                     <button type="reset" class="btn btn-secondary">Reset</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" name="remove" class="btn btn-primary">Remove</button>
                 </form>
             </div>
         </div>
