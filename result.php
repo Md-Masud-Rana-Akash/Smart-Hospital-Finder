@@ -103,8 +103,13 @@
 
  session_start();
  include('dbconnect.php');
+ 
+
 
  if (isset($_POST['submit'])) {
+
+   // $_SESSION['userSession'] = $_POST['divison'];
+  
 
     $divison = $_POST['divison'];
     $role = $_POST['role'];
@@ -173,7 +178,7 @@
                     
                 <?php 
                        $HosId = $row["HospitalId"];
-                       echo $HosId;
+                       
                     echo"<form action='hosDoctor.php?HosId=$HosId' method='POST'><button type='submit' name='submit' style='background-color: #343A40' class='btn btn-info'>View doctors</button>  
                     </form>"; 
 
@@ -288,6 +293,7 @@
  } ?>
 
      </div>
+<?php include"inc/footer.php";?>
 
     </body>
 </html>

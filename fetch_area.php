@@ -6,6 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+
     <style>
 
       * {
@@ -100,26 +102,29 @@
                     <!-- <h2>Column 2</h2>
                     <p>Some text..</p> -->
              <?php         
-                echo "<b>".$row["HospitalName"]."</b>";echo"<br>";
-                echo $row["Email"];echo"<br>";
-                echo $row["Hotline"];echo"<br>";
-                echo $row["DeptName"];echo"<br>";?> 
+                echo '<i class="far fa-hospital"></i>'.' '."<b>".$row["HospitalName"]."</b>";echo"<br>";
+                echo '<i class="fas fa-envelope"></i>'." ".$row["Email"];echo"<br>";
+                echo '<i class="fas fa-phone"></i>'." ".$row["Hotline"];echo"<br>"; 
+                echo '<i class="fas fa-check-square"></i>'.' '.$row["DeptName"];echo"<br>";?> 
             </div>  <br>
 
          <div class="column3" style="background-color:#eaf4f7;">
                     
 
               <?php 
-                   echo $row["Address"];echo"<br>";
-                   echo $row["Division"];echo"<br>";?> 
+                   echo '<i class="fas fa-map-marker-alt"></i>'.' '.$row["Address"];echo"<br>";
+                   echo $row["Division"];echo"<br>";?>  
                   
             </div>   <br>
 
-                 <div class="column4" style="background-color:#d2eaf2;">
+                 <div class="column4" style="background-color:#D2EAF2;">
                     
                     
                 <?php 
-                    echo"<button type='submit'style='background-color: #ffd344' class='btn btn-info'>View doctors</button>"; ?>
+                    $HosId = $row["HospitalId"];
+                       
+                    echo"<form action='hosDoctor.php?HosId=$HosId' method='POST'><button type='submit' name='submit' style='background-color: #343A40' class='btn btn-info'>View doctors</button>  
+                    </form>";  ?>
                   </div>
 
                 </div>

@@ -9,6 +9,7 @@
 
         <?php include 'search.php';?>
 
+
       </center>
 
 
@@ -230,4 +231,5 @@
 </div>
 </center>
 </section>
+
 </div>

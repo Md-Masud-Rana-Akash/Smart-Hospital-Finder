@@ -74,7 +74,7 @@
 
 ?>
 
-                <form action="doctor.php" method="post">
+                <form action="" method="post">
                     <?php if(isset($msg)) {
                      echo $msg;
                     }
@@ -157,9 +157,17 @@
                 </form>
             </div>
             
-
-
-<?php include('dbconnect.php');
+    <!--         <div class="tab-pane" id="removeDoc" role="tabpanel">
+                <form>
+                    <div class="form-group">
+                        <label for="docid">Email:</label>
+                        <input type="text" class="form-control" name="patientid" placeholder="Patient Id">
+                    </div>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div> -->
+         <?php include('dbconnect.php');
 
         if (isset($_POST['remove'])) {
         $email=strip_tags($_POST['email']);
@@ -199,21 +207,21 @@
   ?>
 
 
-
-
-            <div class="tab-pane" id="removeDoc" role="tabpanel">
+           <div class="tab-pane" id="removeDoc" role="tabpanel">
                 <form action="" method="post">
                     <?php if(isset($msg)) {
                      echo $msg;
                     } ?>
-                    <div class="form-group">
-                        <label for="docid">Email:</label>
-                        <input type="text" class="form-control" name="email" placeholder="email">
+                     <div class="form-group">
+                        <label for="email" class="label label-info">Email</label>
+                        <input type="text" required="" class="form-control" name="email" placeholder="">
                     </div>
                     <button type="reset" class="btn btn-secondary">Reset</button>
                     <button type="submit" name="remove" class="btn btn-primary">Remove</button>
                 </form>
             </div>
+
+
         </div>
     </div>
 </div>

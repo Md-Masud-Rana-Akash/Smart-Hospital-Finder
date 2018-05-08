@@ -83,6 +83,7 @@ $DBcon->close();
     <?php include 'doctor.php';?>
 
 
+  <?php include"inc/footer.php";?>
 
   </body>
 

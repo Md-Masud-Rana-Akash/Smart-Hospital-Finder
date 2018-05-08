@@ -1,20 +1,28 @@
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; RRI, CSE411 <?php echo date('Y'); ?></p>
-      </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 8%;
+   width: 100%;
+   background-color: #232528;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+<div class="footer">
+  <p style= "text-align:center;">&copy;
+    <a href = "https://rana.akash0003@gmail.com">Copyright</a> RRI, CSE-411-PROJECT-EWU.</p>
+</div>
 
-  </body>
-
-</html>
+</body>
+</html> 

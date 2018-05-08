@@ -130,5 +130,6 @@ if (isset($_POST['submit'])){
 
 
 	</div>
+	<?php include"inc/footer.php";?>
 </body>
 </html>

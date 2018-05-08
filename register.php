@@ -131,6 +131,7 @@ if(isset($_POST['submit'])) {
                         <option>Khulna Division</option>
                         <option>Mymensingh Division</option>
                         <option>Rajshahi Division</option>
+                        <option>Rangpur Division</option>
                         <option>Sylhet Division</option>
                      </select>
                   </div>
@@ -210,6 +211,8 @@ if(isset($_POST['submit'])) {
     </form>
     </div>
   </div>
+  <?php "<br>"  ?>
+  <?php include"inc/footer.php";?>
 </body>
 </html>
 

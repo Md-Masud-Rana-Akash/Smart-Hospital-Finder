@@ -79,6 +79,13 @@
 <?php 
  
  session_start();
+
+//  if (!isset($_SESSION['userSession'])) {
+//     header("Location: result.php");
+// } else if (isset($_SESSION['userSession'])!="") {
+//     header("Location: index.php");
+// }
+
  include('dbconnect.php');
  $HosId = $_GET['HosId'];
 
@@ -147,3 +154,8 @@ else{
 
  }
     ?>
+<?php include"inc/footer.php";?>
+
+
+
+    
