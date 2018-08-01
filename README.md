@@ -1,4 +1,5 @@
 # Smart-Hospital-Finder
+It was a project of my CSE411(Software Engineering).First I did the Requirement Engineering and later Designed the  Diagrams like Sequence Diagram, Activity Diagram, Class Diagram etc. Based on the analysis and the design I built this Smart Hospital Finder web app.
 
 <b>The main features of this project</b>
 
