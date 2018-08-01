@@ -1,5 +1,4 @@
 # Smart-Hospital-Finder
-It was a project of my CSE411(Software Engineering).First I did the Requirement Engineering and later Designed the  Diagrams like Sequence Diagram, Activity Diagram, Class Diagram etc. Based on the analysis and the design I built this Smart Hospital Finder web app.
 
 <b>The main features of this project</b>
 
@@ -9,7 +8,7 @@ It was a project of my CSE411(Software Engineering).First I did the Requirement 
   <li>User may search by any keywords and result will include hospitals, doctors, services, prices, available hours for a certain disease or location if the keyword matches.</li>
 </ul>
 
-<b>Tools Used</b>
+<b>Used Tools</b>
 <ul>
   <li>PHP 7.1.20</li>
   <li>MySQL</li>
