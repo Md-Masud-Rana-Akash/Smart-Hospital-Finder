@@ -1,0 +1,2 @@
+# Smart-Hospital-Finder
+It was a project for my Software Engineering course. The main features of this project are user will able to know the Hospitals, doctors, available services information throughout the country, Any hospital/diagnostic center can add their information, User may search by any keywords and result will include hospitals, doctors, services, prices, available hours for a certain disease or location if the keyword matches.
